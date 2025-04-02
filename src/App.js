@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import useLazyLoad from "./core/useLazyLoad";
+import Card from "./components/Card";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const renderedItems = useLazyLoad(50, ({ index, isVisible }) => (
+    <Card index={index} isVisible={isVisible} />
+  ));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="app-title">Lazy Load Components</h1>
+      <div className="grid-container">
+        {renderedItems.map((item) => (
+          <div
+            key={item.index}
+            data-index={item.index}
+            ref={item.ref}
+            className="grid-item"
+          >
+            {item.renderedComponent}
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
