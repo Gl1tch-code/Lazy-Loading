@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Gl1tch-code/Lazy-Loading/static/css/main.dd102871.css",
+    "main.js": "/Gl1tch-code/Lazy-Loading/static/js/main.0ff13c0c.js",
+    "static/js/453.8dc91f01.chunk.js": "/Gl1tch-code/Lazy-Loading/static/js/453.8dc91f01.chunk.js",
+    "index.html": "/Gl1tch-code/Lazy-Loading/index.html",
+    "main.dd102871.css.map": "/Gl1tch-code/Lazy-Loading/static/css/main.dd102871.css.map",
+    "main.0ff13c0c.js.map": "/Gl1tch-code/Lazy-Loading/static/js/main.0ff13c0c.js.map",
+    "453.8dc91f01.chunk.js.map": "/Gl1tch-code/Lazy-Loading/static/js/453.8dc91f01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd102871.css",
+    "static/js/main.0ff13c0c.js"
+  ]
+}
